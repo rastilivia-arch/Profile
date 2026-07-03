@@ -1,65 +1,224 @@
+website-pembelajaran/
+│── index.html
+│── materi.html
+│── video.html
+│── kuis.html
+│── style.css
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Website Pembelajaran IPA - Bagian Tubuh Tumbuhan</title>
+<title>Website Pembelajaran IPA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<style>
+<header>
+<h1>🌱 Media Pembelajaran IPA</h1>
+<p>Bagian Tubuh Tumbuhan - Kelas III SD/MI</p>
+</header>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="materi.html">Materi</a>
+<a href="video.html">Video</a>
+<a href="kuis.html">Kuis</a>
+</nav>
+
+<div class="container">
+<h2>Selamat Datang</h2>
+
+<p>
+Website ini berisi materi, video pembelajaran, dan kuis interaktif mengenai
+Bagian Tubuh Tumbuhan.
+</p>
+
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=900" width="100%">
+
+</div>
+
+<footer>
+© 2026 Media Pembelajaran IPA
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Materi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>Materi Bagian Tubuh Tumbuhan</h1></header>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="materi.html">Materi</a>
+<a href="video.html">Video</a>
+<a href="kuis.html">Kuis</a>
+</nav>
+
+<div class="container">
+
+<h2>Akar</h2>
+<p>Menyerap air dan zat hara serta menopang tumbuhan.</p>
+
+<h2>Batang</h2>
+<p>Menopang tumbuhan dan menyalurkan air serta makanan.</p>
+
+<h2>Daun</h2>
+<p>Tempat membuat makanan melalui fotosintesis.</p>
+
+<h2>Bunga</h2>
+<p>Alat perkembangbiakan tumbuhan.</p>
+
+<h2>Buah</h2>
+<p>Melindungi biji.</p>
+
+<h2>Biji</h2>
+<p>Calon tumbuhan baru.</p>
+
+</div>
+
+<footer>
+© 2026
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video Pembelajaran</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Video Pembelajaran</h1>
+</header>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="materi.html">Materi</a>
+<a href="video.html">Video</a>
+<a href="kuis.html">Kuis</a>
+</nav>
+
+<div class="container">
+
+<h2>Video 1</h2>
+
+<iframe
+src="https://drive.google.com/file/d/1Hyv-RmhRcGUm7JWEdmL5hRDpb3Oqd43g/preview"
+allow="autoplay">
+</iframe>
+
+<h2>Video 2</h2>
+
+<iframe
+src="https://drive.google.com/file/d/1tkC1N2BFt9jqvKlikYzLLPwq2JPMFVhc/preview"
+allow="autoplay">
+</iframe>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kuis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Kuis Interaktif</h1>
+</header>
+
+<nav>
+<a href="index.html">Beranda</a>
+<a href="materi.html">Materi</a>
+<a href="video.html">Video</a>
+<a href="kuis.html">Kuis</a>
+</nav>
+
+<div class="container">
+
+<iframe
+src="https://wordwall.net/embed/115587209"
+allowfullscreen>
+</iframe>
+
+<p>
+Jika tidak tampil silakan klik
+<a href="https://wordwall.net/resource/115587209" target="_blank">
+Mulai Kuis
+</a>
+</p>
+
+</div>
+
+</body>
+</html>
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#f0f8f5;
+background:#f0f8ff;
 }
 
 header{
 background:#2e7d32;
 color:white;
-padding:25px;
+padding:20px;
 text-align:center;
 }
 
 nav{
-background:#43a047;
-padding:12px;
+background:#388e3c;
+padding:15px;
 text-align:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:15px;
+padding:12px 20px;
 font-weight:bold;
 }
 
-section{
-max-width:900px;
-margin:auto;
-padding:20px;
+nav a:hover{
+background:white;
+color:#2e7d32;
+border-radius:5px;
 }
 
-.card{
+.container{
+width:90%;
+max-width:900px;
+margin:20px auto;
 background:white;
 padding:20px;
-margin-bottom:20px;
 border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.2);
-}
-
-button{
-background:#2e7d32;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:5px;
-font-size:16px;
-cursor:pointer;
+box-shadow:0 0 10px rgba(0,0,0,.2);
 }
 
 iframe{
 width:100%;
 height:500px;
 border:none;
+margin-bottom:20px;
+}
+
+img{
+border-radius:10px;
 }
 
 footer{
@@ -67,89 +226,5 @@ background:#2e7d32;
 color:white;
 text-align:center;
 padding:15px;
+margin-top:20px;
 }
-</style>
-
-</head>
-
-<body>
-
-<header>
-<h1>🌿 Website Pembelajaran IPA</h1>
-<h2>Materi Bagian Tubuh Tumbuhan</h2>
-</header>
-
-<nav>
-<a href="#beranda">Beranda</a>
-<a href="#materi">Materi</a>
-<a href="#video">Video</a>
-<a href="#pdf">PDF</a>
-<a href="#kuis">Kuis</a>
-</nav>
-
-<section id="beranda">
-<div class="card">
-<h2>Selamat Datang</h2>
-<p>Website ini membantu siswa mempelajari bagian tubuh tumbuhan melalui materi, video pembelajaran, PDF, dan kuis interaktif.</p>
-</div>
-</section>
-
-<section id="materi">
-<div class="card">
-<h2>Materi Bagian Tubuh Tumbuhan</h2>
-
-<h3>🌱 Akar</h3>
-<p>Menyerap air dan zat hara serta menopang tumbuhan.</p>
-
-<h3>🌿 Batang</h3>
-<p>Mengangkut air dan makanan ke seluruh bagian tumbuhan.</p>
-
-<h3>🍃 Daun</h3>
-<p>Tempat berlangsungnya fotosintesis.</p>
-
-<h3>🌸 Bunga</h3>
-<p>Alat perkembangbiakan tumbuhan.</p>
-
-<h3>🍎 Buah dan Biji</h3>
-<p>Melindungi biji dan menghasilkan tumbuhan baru.</p>
-
-</div>
-</section>
-
-<section id="video">
-<div class="card">
-<h2>🎥 Video Pembelajaran</h2>
-
-<iframe src="https://drive.google.com/file/d/1Hyv-RmhRcGUm7JWEdmL5hRDpb3Oqd43g/preview" allow="autoplay"></iframe>
-
-</div>
-</section>
-
-<section id="pdf">
-<div class="card">
-<h2>📄 Materi PDF</h2>
-
-<a href="https://drive.google.com/file/d/1tkC1N2BFt9jqvKlikYzLLPwq2JPMFVhc/view?usp=sharing" target="_blank">
-<button>Buka Materi PDF</button>
-</a>
-
-</div>
-</section>
-
-<section id="kuis">
-<div class="card">
-<h2>🎮 Kuis Wordwall</h2>
-
-<a href="https://wordwall.net/resource/115587209" target="_blank">
-<button>Mulai Kuis</button>
-</a>
-
-</div>
-</section>
-
-<footer>
-<p>© 2026 Website Pembelajaran IPA</p>
-</footer>
-
-</body>
-</html>
